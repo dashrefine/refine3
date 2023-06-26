@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Filter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="topSizeDropdown">Top Size:</label>
+                <select id="topSizeDropdown" class="form-control">
+                    <option value="">Select Top Size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="bottomSizeDropdown">Bottom Size:</label>
+                <select id="bottomSizeDropdown" class="form-control">
+                    <option value="">Select Bottom Size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="shoeSizeDropdown">Shoe Size:</label>
+                <select id="shoeSizeDropdown" class="form-control">
+                    <option value="">Select Shoe Size</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button id="filterButton" class="btn btn-primary btn-block">Filter</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <p id="errorMessage" class="text-danger d-none"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
